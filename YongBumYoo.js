@@ -9,7 +9,7 @@ myarr = myarr.map(function(ele) {
 // Q2
 request
 
-// Q3
+// Q2 & Q3
 >`hikes.js`
 
     var hikes = [
@@ -60,8 +60,8 @@ request
     };
 
 // Q4
-You use Observable to see if there's any change in the file.
-If something's changed in the specified file, Observable will catch it.
+You use Observable to see if there's any change in the file or object.
+If something's changed in the specified object, Observable will catch it.
 
 // Q5
 fuse create app_name
