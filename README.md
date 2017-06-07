@@ -41,8 +41,8 @@
 
 > `MainView.js`
 
-    var Observable = ______("FuseJS/Observable");
-    var myHikes = ______("hikes");
+    var Observable = require("FuseJS/Observable");
+    var myHikes = require("hikes");
 
     var hike = Observable();
 
@@ -62,14 +62,16 @@
 - **Q2** Fill in the blank
 - **Q3** Add codes in `hikes.js`
 
-> I want to capture the  --------
 
 - **Q4** What's `Observable` ?
+새로 들어오는 input에 맞혀서 그 위에다가 덮어주는 것
 
 ## Fuse Command Line
 - **Q5** What's the the Fuse command to create a new app?
-- **Q6** How to open a created app in Fuse?
+        Fuse create app helloworld
 
+- **Q6** How to open a created app in Fuse?
+        Fuse preview
 ##
 
 
@@ -79,7 +81,7 @@
     <App>
   	   <ClientPanel>
 		<JavaScript>
-			var Observable = ____("FuseJS/Observable");
+			var Observable = require("FuseJS/Observable");
 
 			var hikes = [ ... ] ;
             </JavaScript>
@@ -89,7 +91,7 @@
 >After placing JS code into seperate `.js` files, my Fuse app failed to build. I realize I should have added this code chunk in a certain file.
 **code**:`"hikes.js:Bundle"`
 
-- ** Q7 ** Tell me in which file I should place this code chunk.
+- ** Q7 ** Tell me in which file I should place this code chunk. 이거 정답 : c
  - a.  `.gitignore`
  - b. `hikes.js`
  - c. `hikr.unoproj`
@@ -113,7 +115,7 @@
          <Text> Location: </Text>
          <TextBox Value ="{location}"></Text>
          <Text> Distance (km) : </Text>
-         <TextBox Value ="{distance}" __(a)__ = "__(b)__"></TextBox
+         <TextBox Value ="{distance}" __(a)__ = "__(b)__"></TextBox>
          <Text> Rating: </Text>
          <TextBox Value ="{rating}" __(c)__ = "__(d)__"></TextBox>
          <Text> Comments: </Text>
@@ -125,33 +127,33 @@
 
 
 - **Q8** From the `closing.ux`, how many tags can be written like this example? **example**`<ExampleTag/>`
- - `<App>` :
- - `<ClientPanel>` :
- - `<JavaScript>` :
- - `<StackPanel>` :
- - `<Text>` :
- - `<TextBox>` :
- - `<Button>` :
+ - `<App>` : 0
+ - `<ClientPanel>` : 0
+ - `<JavaScript>` : 1
+ - `<StackPanel>` : 0
+ - `<Text>` : 6
+ - `<TextBox>` : 5
+ - `<Button>` : 1
 
 > Match a code and an image.
 
-- ** Q9** `<Text/>`
-- ** Q10** `<TextBox/>`
-- ** Q11** `<TextView/>`
+- ** Q9** `<Text/>`Apple
+- ** Q10** `<TextBox/>` Banana
+- ** Q11** `<TextView/>` Orange
 
 > Fill in the blanks based on what we did.
 
-- **Q12** (a)
-- **Q13** (b)
-- **Q14** (c)
-- **Q15** (d)
-- **Q16** (e)
-- **Q17** (f)
+- **Q12** (a) inputUnit
+- **Q13** (b) Decimal
+- **Q14** (c) inputUnit
+- **Q15** (d) Decimal
+- **Q16** (e) InputWrapping
+- **Q17** (f) Wrap
 
 > `<StackPanel/>`
 
 - **Q18** Describe what `<StackPanel/>` does.
-
+      Panel 은 일단 HTML의 Div같은거인데, 페이지 크기에 맞추어주는 역할하는거.
 
 
 
